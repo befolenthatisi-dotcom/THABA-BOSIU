@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thaba-Bosiu in Pictures</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Thaba-Bosiu in Pictures</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Filter Buttons -->
+  <div class="filter-btns">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="landscape">Landscapes</button>
+    <button class="filter-btn" data-category="cultural">Cultural</button>
+  </div>
+
+  <!-- Gallery Grid -->
+  <main class="gallery-grid">
+    <div class="gallery-item" data-category="landscape">
+      <img src="bosiuuuuu.jpg" alt="Thaba-Bosiu Landscape">
+      <p>Beautiful view of Thaba-Bosiu at sunrise.</p>
+    </div>
+    <div class="gallery-item" data-category="landscape">
+      <img src="MOUNTAIN PATH.jpg" alt="Mountain Path">
+      <p>Historical path leading to the top.</p>
+    </div>
+    <div class="gallery-item" data-category="cultural">
+      <img src="images (1).jpg" alt="Cultural Site">
+      <p>Traditional Basotho structures near the base.</p>
+    </div>
+    <div class="gallery-item" data-category="landscape">
+      <img src="images (2).jpg" alt="Scenic Panorama">
+      <p>Panoramic view from the peak of Thaba-Bosiu.</p>
+    </div>
+    <div class="gallery-item" data-category="cultural">
+      <img src="CULTURAL EVENT.jpg" alt="Cultural Event">
+      <p>Annual celebration held at Thaba-Bosiu.</p>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+    <div class="caption"></div>
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+     <p>&copy 2025 copyright Thaba-Bosiu. All rigts Reserved</p>
+  </footer>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
